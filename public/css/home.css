@@ -1,0 +1,343 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li::after {
+    content: ''; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 2px; 
+    background-color: #fff; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2023/11/call-of-duty-warrior-with-weapon-red-desktop-wallpaper-preview.jpg');
+    padding: 100px 0; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px; 
+}
+
+.hero p {
+    font-size: 1.5em; 
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #fff;
+    color: #222;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.hero button:hover {
+    background-color: #605d5d; 
+}
+
+/* Explore categories section styles */
+.explore-categories-header {
+    background-color:  #5f3939; 
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.explore-categories-header p {
+    margin: 0; 
+    color: #dfd9d9; 
+    font-size: 2.4em; 
+    font-weight: bold; 
+}
+
+.explore-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-image: url('https://i.pinimg.com/originals/53/d9/cd/53d9cd303086eae0decfed3d000fc976.jpg'); 
+    background-size: cover; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+
+.category-item {
+    width: 300px;
+    height: 300px; 
+    margin: 20px;
+    position: relative; 
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s ease; 
+}
+
+.category-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+}
+
+.category-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+
+/* About section styles */
+.about {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: black solid 1mm;
+}
+
+.about img {
+    display: block;
+    width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.text-overlay p {
+    color: #fff; 
+    font-size: 18px;
+    text-align: center, justify;
+}
+
+/* Featured products section styles */
+.featured-products-header {
+    background: #d73b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative; 
+    border:#000000 solid 1mm;
+}
+
+.featured-products-header p {
+    color: #181212;
+    font-size: 1.5em;
+    margin: 0;
+    position: relative; 
+    z-index: 1; 
+    transition: color 0.3s; 
+}
+
+.featured-products-header p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0); 
+    transform-origin: bottom left; 
+    transition: transform 0.3s ease; 
+}
+
+.featured-products-header:hover p::after {
+    transform: scaleX(1); 
+    transform-origin: bottom right; 
+}
+ 
+
+.featured-products-header:hover p {
+    color: #cfcfcf;
+}
+
+.featured-products {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    background-color: #d73b3b;
+}
+
+.featured-products img{
+    height: 100%;
+    max-width: 100%;
+    flex-wrap:nowrap;
+    border: #000000 solid 1mm;
+    display: block;
+}
+
+.featured-products p{
+    text-align: center;
+}
+
+.featured-products button{
+    margin: auto;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    font: Georgia;
+}
+
+.featured-products button:hover{
+    background-color: #605d5d; 
+}
+
+/* Footer styles */
+footer {
+    background-color: #0e0707;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 768px) {
+    /* Adjustments for header */
+    header {
+        padding: 20px;
+    }
+    
+    /* Adjustments for hero section */
+    .hero {
+        padding: 150px 0; 
+    }
+
+    .hero h1 {
+        font-size: 4em;
+    }
+
+    .hero p {
+        font-size: 1.8em; 
+    }
+
+    .hero button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+
+    /* Adjustments for category items */
+    .category-item {
+        width: 250px;
+        height: 250px; 
+    }
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 767px) {
+    /* Adjustments for header */
+    header {
+        padding: 15px;
+    }
+
+    /* Adjustments for hero section */
+    .hero {
+        padding: 100px 0; 
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1.5em; 
+    }
+
+    .hero button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    /* Adjustments for category items */
+    .category-item {
+        width: 200px;
+        height: 200px; 
+    }
+}

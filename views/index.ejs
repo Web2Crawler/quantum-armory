@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Quantum Armory - Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Quantum Armory</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/unique">Unique Features</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/signup">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="cart">Cart</div>
+    </header>
+<div class = "outer">
+    <div class = "hero-class">
+        <section class="hero">
+            <h1>Welcome to Quantum Armory</h1>
+            <p>The best marketplace there is in the world of arms!</p>
+            <button id="shopNowBtn">Shop Now</button>
+            <button id="learnMoreBtn">Learn More</button>
+        </section>
+    </div>
+
+   
+    <div class="explore-categories-header">
+        <p>Explore categories</p>
+    </div>
+    <section class="explore-categories">
+        <div class="category-item">
+            <img src="img/home/explore categories/a8d87e3363014b41a299e36b9fc02a63.jpeg" alt="Tactical Equipments">
+            <div class="category-name">Tactical Equipments</div>
+        </div>
+        <div class="category-item">
+            <img src="img/home/explore categories/custom.webp" alt="Guns">
+            <div class="category-name">Space torpedoes</div>
+        </div>
+        <div class="category-item">
+            <img src="img/home/explore categories/drone.jpg" alt="Guns">
+            <div class="category-name">Drones</div>
+        </div>
+        <div class="category-item">
+            <img src="img/home/explore categories/combat-satellite.webp" alt="Guns">
+            <div class="category-name">Combat satellite</div>
+        </div>
+        <div class="category-item">
+            <img src="https://png.pngtree.com/thumb_back/fw800/background/20230722/pngtree-cyborg-using-tablet-in-a-futuristic-factory-with-automation-concept-image_3781862.jpg" alt="Guns">
+            <div class="category-name">Custom</div>
+        </div>
+    </section>
+   
+    <div class="about">
+        <img src="https://images.alphacoders.com/134/1345265.png" alt="Quantum Armory">
+        <div class="text-overlay">
+            <p>Quantum Armory stands as the premier destination for all weaponry needs, 
+            serving a diverse array of clients ranging from elite military units to 
+                intrepid space explorers and cunning mercenaries.
+                At Quantum Armory, cutting-edge technology meets unparalleled craftsmanship 
+                to produce a vast arsenal of weapons tailored to suit the ever-evolving demands
+                 of the galaxy's most discerning clientele. From sleek plasma rifles and precision 
+                 laser pistols to formidable energy shields and autonomous combat drones
+                , every product in the Quantum Armory inventory is engineered to exceed expectations
+                 and redefine the standards of warfare in the cosmos.</p>
+        </div>
+    </div>
+
+    <div class="featured-products-header">
+        <p>Featured Product</p>
+    </div>
+
+    <div class = "featured-products">
+        <span class = "assault-rifle">
+            <img src = "img/home/featured products/3ds_Max_Tutorial_The_Production_and_Sharing_of_Sci_Fi_Guns_14_b923292e57.png"/>
+        </span>
+        <button id = "enquire">Enquire</button>
+    </div>
+  
+
+    <script>
+
+        document.getElementById("shopNowBtn").addEventListener("click", function() {
+            alert("Redirecting to the shop page...");
+        
+        });
+    
+  
+        document.getElementById("learnMoreBtn").addEventListener("click", function() {
+            alert("Redirecting to the learn more page...");
+       
+        });
+    
+        document.querySelector(".featured-products .assault-rifle").addEventListener("click", function() {
+            alert("Viewing featured product details...");
+        });
+        
+        document.getElementById("enquire").addEventListener("click", function () {
+            alert("Your request will be reviewed soon.");
+        });
+    </script>
+
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </footer>   
+</div>
+</body>
+</html>
